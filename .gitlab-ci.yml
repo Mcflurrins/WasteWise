@@ -157,7 +157,7 @@ check_video_resolution:
       EOF
     - chmod +x /tmp/check_word_count.sh
 
-check-word-count:
+check_word_count:
   stage: comp3900-checks
   tags:
     - comp4350
@@ -166,7 +166,7 @@ check-word-count:
     - /tmp/check_word_count.sh $ASSIGNMENT_MIN_WORDS $ASSIGNMENT_MAX_WORDS $ASSIGNMENT_DOCUMENT_NAME.md
   allow_failure: false
 
-check-markdown:
+check_markdown:
   stage: comp3900-checks
   tags:
     - comp4350
@@ -210,7 +210,7 @@ check-markdown:
       - '$ASSIGNMENT_DOCUMENT_NAME.md'
   allow_failure: false
 
-build-pdf:
+build_pdf:
   stage: comp3900-build
   image:
     name: charlepm/pandoc-latex-libertine:0.3.0
