@@ -1,0 +1,157 @@
+stages:
+  - comp3900-checks
+  - comp3900-build
+
+variables:
+  ASSIGNMENT_DOCUMENT_NAME: 'project-documentation'
+  ASSIGNMENT_MIN_WORDS: 400
+  ASSIGNMENT_MAX_WORDS: 1980
+
+.word_count_template: &word_count
+  image: alpine:3.21.2
+  before_script:
+    - |
+      cat > /tmp/check_word_count.sh << 'EOF'
+      #!/bin/sh
+      
+      min_words=$1
+      max_words=$2
+      shift 2  # Remove the first two arguments (min and max)
+      total_words=0
+
+      if [ $# -eq 0 ]; then
+        echo "Error: No files specified"
+        exit 1
+      fi
+
+      for file in "$@"; do
+      
+        if [ ! -f "$file" ]; then
+            echo "Error: File $file not found"
+            exit 1
+        fi
+        
+        # Count words in markdown file, excluding:
+        # 1. YAML frontmatter if present
+        # 2. Content after "## References"
+        # 3. Code blocks (content between triple backticks)
+        word_count=$(sed '/^---$/,/^---$/d' "$file" | 
+                    sed '/^## References/,$d' | 
+                    awk '
+                      BEGIN { in_code_block = 0 }
+                      /^```/ { in_code_block = !in_code_block; next }
+                      !in_code_block { print }
+                    ' | 
+                    wc -w)
+      
+        echo "Word count for $file: $word_count"
+        total_words=$((total_words + word_count))
+      done
+
+      echo "Total word count across all files: $total_words"
+      
+      if [ $total_words -lt $min_words ]; then
+          echo "Error: Word count ($total_words) is less than minimum required ($min_words)"
+          exit 1
+      elif [ $total_words -gt $max_words ]; then
+          echo "Error: Word count ($total_words) exceeds maximum allowed ($max_words)"
+          exit 1
+      else
+          echo "Success: Word count ($total_words) is within acceptable range ($min_words - $max_words)."
+          exit 0
+      fi
+      EOF
+    - chmod +x /tmp/check_word_count.sh
+
+check-word-count:
+  stage: comp3900-checks
+  tags:
+    - comp4350
+  <<: *word_count
+  script:
+    - /tmp/check_word_count.sh $ASSIGNMENT_MIN_WORDS $ASSIGNMENT_MAX_WORDS $ASSIGNMENT_DOCUMENT_NAME.md
+  allow_failure: false
+
+check-markdown:
+  stage: comp3900-checks
+  tags:
+    - comp4350
+  image: node:18-alpine
+  before_script:
+    - npm install -g markdownlint-cli
+    - |
+      cat > .markdownlint.json << 'EOF'
+      {
+        "default": true,
+        "MD013": false,
+        "MD041": false
+      }
+      EOF
+  script:
+    - echo "🔍 Linting markdown document..."
+    - echo ""
+    - |
+      if markdownlint $ASSIGNMENT_DOCUMENT_NAME.md; then
+        echo "✅ SUCCESS: Markdown document meets standards."
+        echo "🎉 Great job! Your document meets the standards listed here: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md"
+      else
+        echo "❌ FAILED: Markdown document does not meet standards"
+        echo ""
+        echo "🔧 Common fixes:"
+        echo "   - Ensure headers follow proper hierarchy (# ## ### etc.)"
+        echo "   - Add blank lines around headers, lists, and images"
+        echo "   - Remove trailing whitespace"
+        echo "   - Ensure lists are properly formatted"
+        echo "   - Add blank line at end of file"
+        echo ""
+        echo "📚 For a detailed Markdown style guide, see:"
+        echo "   https://www.markdownguide.org/basic-syntax/"
+        echo "   Note that the rules for this checking script are documented here:"
+        echo "   https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md"
+        exit 1
+      fi
+      echo "✅ Document structure check passed"
+  rules:
+    - exists: 
+      - '$ASSIGNMENT_DOCUMENT_NAME.md'
+  allow_failure: false
+
+build-pdf:
+  stage: comp3900-build
+  image:
+    name: charlepm/pandoc-latex-libertine:0.3.0
+    entrypoint: ["/bin/sh", "-c"]
+  tags:
+    - comp4350
+  variables:
+    INPUT_MARKDOWN: '$ASSIGNMENT_DOCUMENT_NAME.md'
+    OUTPUT_PDF: '$CI_PROJECT_NAME-$CI_PROJECT_NAMESPACE-$ASSIGNMENT_DOCUMENT_NAME.pdf'
+  script:
+    - |
+      cp */*.png . || true
+    - |
+      cp */*.PNG . || true
+    - |
+      cp */*.jpg . || true
+    - |
+      cp */*.JPG . || true
+    - |
+      cp */*.jpeg . || true
+    - |
+      cp */*.JPEG . || true
+    - |
+      pandoc \
+      --standalone \
+      --embed-resources \
+      --metadata date="$(date '+%Y-%m-%d')" \
+      --output=$OUTPUT_PDF \
+      -V 'geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm' \
+      -V 'papersize: a4' \
+      -V 'pagestyle:headings' \
+      -V 'fontfamily:libertine,sourcecodepro' \
+      -V 'fontsize:11pt' \
+      $INPUT_MARKDOWN
+  artifacts:
+    paths: 
+      - $OUTPUT_PDF
+  allow_failure: true
