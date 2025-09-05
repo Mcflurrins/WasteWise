@@ -1,11 +1,105 @@
 stages:
+  - comp3900-video
   - comp3900-checks
   - comp3900-build
 
 variables:
   ASSIGNMENT_DOCUMENT_NAME: 'project-documentation'
   ASSIGNMENT_MIN_WORDS: 400
-  ASSIGNMENT_MAX_WORDS: 1980
+  ASSIGNMENT_MAX_WORDS: 1650
+  ASSIGNMENT_VIDEO_NAME: 'project-presentation'
+  ASSIGNMENT_VIDEO_MIN_DURATION: 90  # in seconds (4 minutes)
+  ASSIGNMENT_VIDEO_MAX_DURATION: 330  # in seconds (10 minutes)
+
+check_video_exists:
+  stage: comp3900-video
+  tags:
+    - comp4350
+  image: alpine:3.21.2
+  script:
+    # Check if the file exists
+    - |
+      if [ -f "$ASSIGNMENT_VIDEO_NAME.mp4" ]; then
+        FILE_NAME="$ASSIGNMENT_VIDEO_NAME.mp4"
+        echo "Found MP4 file: $FILE_NAME"
+      else
+        echo "Error: $ASSIGNMENT_VIDEO_NAME.mp4 found"
+        exit 1
+      fi  
+  allow_failure: false
+
+check_video_length:
+  stage: comp3900-video
+  tags:
+    - comp4350
+  image: 
+    name: jrottenberg/ffmpeg:7.1-alpine
+    entrypoint: [""] 
+  variables:
+    MIN_LENGTH: $ASSIGNMENT_VIDEO_MIN_DURATION
+    MAX_LENGTH: $ASSIGNMENT_VIDEO_MAX_DURATION
+    FILE_NAME: $ASSIGNMENT_VIDEO_NAME.mp4
+  script:     
+    # Get the file length in seconds
+    - |
+      # Extract duration in seconds using ffprobe
+      DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $FILE_NAME)
+      # Round to nearest integer if needed
+      DURATION_INT=$(printf "%.0f" $DURATION)
+      echo "Video duration: $DURATION_INT seconds"
+      
+    # Check if duration is within the acceptable range
+    - |
+      if [ $DURATION_INT -lt $MIN_LENGTH ]; then
+        echo "Error: Video is too short. Minimum length is $MIN_LENGTH seconds, but video is $DURATION_INT seconds."
+        exit 1
+      fi
+      
+      if [ $DURATION_INT -gt $MAX_LENGTH ]; then
+        echo "Error: Video is too long. Maximum length is $MAX_LENGTH seconds, but video is $DURATION_INT seconds."
+        exit 1
+      fi
+      
+      echo "Video length check passed: $DURATION_INT seconds (required: between $MIN_LENGTH and $MAX_LENGTH seconds)"
+  rules:
+    - exists:
+        - lens-performance.mp4
+  allow_failure: true
+
+check_video_resolution:
+  stage: comp3900-video
+  tags:
+    - comp4350
+  image: 
+    name: jrottenberg/ffmpeg:7.1-alpine
+    entrypoint: [""] 
+  variables:
+    FILE_NAME: $ASSIGNMENT_VIDEO_NAME.mp4 
+    MAX_WIDTH: 1920
+    MAX_HEIGHT: 1080
+  script:
+    # Get the video resolution
+    - |
+      WIDTH=$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=noprint_wrappers=1:nokey=1 $FILE_NAME)
+      HEIGHT=$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=noprint_wrappers=1:nokey=1 $FILE_NAME)
+      
+    # Check if resolution is within the acceptable dimensions
+    - |
+      if [ $WIDTH -gt $MAX_WIDTH ]; then
+        echo "Error: Video is too wide. Maximum width is $MAX_WIDTH, but video is $WIDTH pixels wide."
+        exit 1
+      fi
+      
+      if [ $HEIGHT -gt $MAX_HEIGHT ]; then
+        echo "Error: Video is too tall. Maximum height is $MAX_HEIGHT, but video is $HEIGHT pixels tall."
+        exit 1
+      fi
+      
+      echo "Video resolution check passed: $WIDTH x $HEIGHT is not larger than $MAX_WIDTH x $MAX_HEIGHT"
+  rules:
+    - exists:
+        - $ASSIGNMENT_VIDEO_NAME.mp4
+  allow_failure: true
 
 .word_count_template: &word_count
   image: alpine:3.21.2
