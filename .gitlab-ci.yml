@@ -129,14 +129,22 @@ check_video_resolution:
         # 1. YAML frontmatter if present
         # 2. Content after "## References"
         # 3. Code blocks (content between triple backticks)
-        word_count=$(sed '/^---$/,/^---$/d' "$file" | 
-                    sed '/^## References/,$d' | 
-                    awk '
-                      BEGIN { in_code_block = 0 }
-                      /^```/ { in_code_block = !in_code_block; next }
-                      !in_code_block { print }
-                    ' | 
-                    wc -w)
+        # 4. characters that aren't alphabetic or whitespace
+        word_count=$(awk '
+          BEGIN { removed_frontmatter = 0 }
+          NR == 1 && $0 == "---" { in_front = 1; next }
+          in_front && $0 == "---" { in_front = 0; removed_frontmatter = 1; next }
+          in_front { next }
+          { print }
+        ' "$file" |
+        sed '/^## References/,$d' | 
+        awk '
+          BEGIN { in_code_block = 0 }
+          /^```/ { in_code_block = !in_code_block; next }
+          !in_code_block { print }
+        ' |
+        sed 's/[^[:alpha:][:space:]]//g' |
+        wc -w)
       
         echo "Word count for $file: $word_count"
         total_words=$((total_words + word_count))
