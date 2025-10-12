@@ -63,7 +63,7 @@ check_video_length:
       echo "Video length check passed: $DURATION_INT seconds (required: between $MIN_LENGTH and $MAX_LENGTH seconds)"
   rules:
     - exists:
-        - lens-performance.mp4
+        - $ASSIGNMENT_VIDEO_NAME.mp4
   allow_failure: true
 
 check_video_resolution:
