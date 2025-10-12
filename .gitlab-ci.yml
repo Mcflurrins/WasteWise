@@ -8,8 +8,8 @@ variables:
   ASSIGNMENT_MIN_WORDS: 400
   ASSIGNMENT_MAX_WORDS: 1980
   ASSIGNMENT_VIDEO_NAME: 'project-presentation'
-  ASSIGNMENT_VIDEO_MIN_DURATION: 90  # in seconds (4 minutes)
-  ASSIGNMENT_VIDEO_MAX_DURATION: 330  # in seconds (10 minutes)
+  ASSIGNMENT_VIDEO_MIN_DURATION: 30  # in seconds
+  ASSIGNMENT_VIDEO_MAX_DURATION: 330  # in seconds
 
 check_video_exists:
   stage: comp3900-video
