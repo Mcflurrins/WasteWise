@@ -1,0 +1,3 @@
+[submodule "materials/HCI_prototype"]
+	path = materials/HCI_prototype
+	url = https://github.com/Mcflurrins/HCI_research_project.git
