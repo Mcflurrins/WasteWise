@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Expiry Tracker — Add Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container py-4">
+      <h1 class="mb-4">Add new food item</h1>
+
+      {% if messages %}
+        {% for msg in messages %}
+          <div class="alert alert-{{ msg.tags }}">{{ msg }}</div>
+        {% endfor %}
+      {% endif %}
+
+      <form method="post" action="" class="row g-3">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+
+        <div class="col-12 col-md-6">
+          {{ form.name.label_tag }}
+          {{ form.name }}
+          {{ form.name.errors }}
+        </div>
+
+        <div class="col-12 col-md-3">
+          {{ form.quantity.label_tag }}
+          {{ form.quantity }}
+          {{ form.quantity.errors }}
+        </div>
+
+        <div class="col-12 col-md-3">
+          {{ form.unit.label_tag }}
+          {{ form.unit }}
+          {{ form.unit.errors }}
+        </div>
+
+        <div class="col-12 col-md-6">
+          {{ form.storage.label_tag }}
+          {{ form.storage }}
+          {{ form.storage.errors }}
+        </div>
+
+        <div class="col-12 col-md-6">
+          {{ form.expiry_date.label_tag }}
+          {{ form.expiry_date }}
+          {{ form.expiry_date.errors }}
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Dietary characteristics</label>
+          {{ form.dietary }}
+          {{ form.dietary.errors }}
+        </div>
+
+        <div class="col-12">
+          {{ form.notes.label_tag }}
+          {{ form.notes }}
+          {{ form.notes.errors }}
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Save item</button>
+          <a href="{% url 'expiry_tracker:list' %}" class="btn btn-link">Back to list</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

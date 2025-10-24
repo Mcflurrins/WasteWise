@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Snapshot results</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background: #f4f4f4; }
+        input, select, textarea { width: 100%; box-sizing: border-box; }
+        .small { width: 6rem; }
+        .actions { width: 8rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Detected objects</h1>
+
+    <!-- detections is expected to be a list of dicts like {'label': 'apple', 'confidence': 0.92} -->
+    <button id="addRowBtn" type="button">Add empty row</button>
+    <form id="importForm" method="post" onsubmit="return false;">
+        <table id="itemsTable" aria-describedby="detected items">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="small">Qty</th>
+                    <th class="small">Unit</th>
+                    <th>Storage</th>
+                    <th class="small">Expiry date</th>
+                    <th>Dietary (comma separated)</th>
+                    <th>Notes</th>
+                    <th class="actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for d in detections %}
+                <tr>
+                    <td><input name="name" value="{{ d.label }}" required></td>
+                    <td><input name="quantity" type="number" min="1" value="1" class="small"></td>
+                    <td><input name="unit" value=""></td>
+                    <td><input name="storage" value=""></td>
+                    <td><input name="expiry_date" type="date" required></td>
+                    <td><input name="dietary" placeholder="e.g. vegan,gluten-free"></td>
+                    <td><input name="notes"></td>
+                    <td class="actions"><button type="button" onclick="deleteRow(this)">Delete</button></td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="8">No objects detected.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <p>
+            <button id="submitBtn" type="button">Import to expiry tracker</button>
+            <span id="status" style="margin-left:1rem;"></span>
+        </p>
+    </form>
+
+<script>
+function csrftoken() {
+    // read csrftoken from cookie (Django default)
+    const match = document.cookie.match(/(^|;)\\s*csrftoken=([^;]+)/);
+    return match ? decodeURIComponent(match[2]) : '';
+}
+
+function deleteRow(btn) {
+    const tr = btn.closest('tr');
+    tr.remove();
+}
+
+document.getElementById('addRowBtn').addEventListener('click', () => {
+    const tbody = document.querySelector('#itemsTable tbody');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td><input name="name" required></td>
+        <td><input name="quantity" type="number" min="1" value="1" class="small"></td>
+        <td><input name="unit"></td>
+        <td><input name="storage"></td>
+        <td><input name="expiry_date" type="date" required></td>
+        <td><input name="dietary" placeholder="e.g. vegan,gluten-free"></td>
+        <td><input name="notes"></td>
+        <td class="actions"><button type="button" onclick="deleteRow(this)">Delete</button></td>
+    `;
+    tbody.appendChild(tr);
+});
+
+function collectRows() {
+    const rows = Array.from(document.querySelectorAll('#itemsTable tbody tr'));
+    const items = [];
+    for (const row of rows) {
+        // skip rows without inputs (e.g., the "no objects" row)
+        const nameEl = row.querySelector('input[name="name"]');
+        if (!nameEl) continue;
+        const name = nameEl.value.trim();
+        if (!name) continue; // skip empty name rows
+        const quantity = row.querySelector('input[name="quantity"]').value || '1';
+        const unit = row.querySelector('input[name="unit"]').value || '';
+        const storage = row.querySelector('input[name="storage"]').value || '';
+        const expiry_date = row.querySelector('input[name="expiry_date"]').value || '';
+        const dietary = row.querySelector('input[name="dietary"]').value || '';
+        const notes = row.querySelector('input[name="notes"]').value || '';
+        items.push({
+            name, quantity, unit, storage, expiry_date, dietary, notes
+        });
+    }
+    return items;
+}
+
+document.getElementById('submitBtn').addEventListener('click', () => {
+    const items = collectRows();
+    if (!items.length) {
+        alert('No items to import.');
+        return;
+    }
+    document.getElementById('submitBtn').disabled = true;
+    document.getElementById('status').textContent = 'Importing...';
+
+    fetch("{% url 'food_detector:import_to_expiry' %}", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrftoken()
+        },
+        body: JSON.stringify({ items })
+    }).then(r => r.json())
+      .then(data => {
+          if (data && data.success) {
+              // redirect to expiry tracker list - adjust if your project's URL differs
+              window.location.href = "{% url 'expiry_tracker:list' %}" || "/expiry_tracker/list/";
+          } else {
+              document.getElementById('status').textContent = 'Import failed';
+              console.error('import failed', data);
+              document.getElementById('submitBtn').disabled = false;
+          }
+      }).catch(err => {
+          console.error(err);
+          document.getElementById('status').textContent = 'Error during import';
+          document.getElementById('submitBtn').disabled = false;
+      });
+});
+</script>
+</body>
+</html>

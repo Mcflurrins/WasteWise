@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Waste Wise — Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="mb-4">Waste Wise</h1>
+    <p class="lead">Quick access to the expiry tracker and the food detector.</p>
+
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <a href="{% url 'expiry_tracker:list' %}" class="btn btn-lg btn-primary w-100">
+          🗂️ View Expiry Tracker
+        </a>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <a href="/food_detector/" class="btn btn-lg btn-outline-success w-100">
+          📷 Open Food Detector
+        </a>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <p class="text-muted small">
+      If you don't see the expiry tracker link working, ensure 'expiry_tracker' is included in your URLconf and has a named route 'expiry_tracker:list'.
+    </p>
+  </div>
+</body>
+</html>
