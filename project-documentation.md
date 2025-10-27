@@ -6,9 +6,6 @@ author: u8260921
 
 <!-- 
 it should be no more than 1980 words. 
-
-![Caption for your image](materials/your-image.jpg)
-
 -->
 
 ## Research Question, Plan, and Conclusions
@@ -21,11 +18,13 @@ In light of these challenges, this study explores an innovative approach: integr
 This leads to my research question: “What are students’ perceptions of usability, usefulness, and sustainability impact in an AI-assisted food management prototype for reducing food waste?”
 
 ### Evaluation Plan
-Consent to be recorded was requested beforehand and identifying information have been anonymized. The study starts with a pre-task survey to probe awareness on food waste and responsible consumption, related to the 12th SDG. 
+Consent to be recorded was requested beforehand and identifying information has been anonymized. The study starts with a pre-task survey to probe awareness on food waste and responsible consumption, related to the 12th SDG. 
 
 Participants were briefed on the functionality of the website, then asked to input 3 food objects as database entries. The food items provided were bread, a carton of eggs, and a can of black pepper. In order to improve immersion, participants were asked to roleplay as if they had shopped for the groceries themselves. The site also comes pre-filled with other ingredients to simulate a moderately pre-stocked kitchen environment. The means by which participants decided to input the ingredients were left up to individual exploration to encourage independent evaluation of the UI/UX. Participants were then asked what they'd do with the food they now had in their "kitchen" (current database state), and how they'd deal with surplus. Afterwards, a semi-structured interview was conducted to obtain qualitative data. Lastly, participants were to fill a post-task survey comprising the SUS scale, a short NASA-TLX index, and another post-task probe on responsible consumption. 
 
 ## Conclusions 
+
+Overall, students perceived the prototype as highly usable, useful, and impactful in promoting sustainable behaviors. Quantitative results showed strong usability (SUS = 85.5, p < 0.05, d = 1.47) and low workload (NASA-TLX ≈ 2/7), indicating that the system was both efficient and enjoyable to use. The prototype significantly improved users’ inventory awareness (p = 0.002), while qualitative findings revealed meaningful cognitive and behavioral shifts toward more mindful food management and waste reduction. Participants found the interface intuitive and engaging, particularly appreciating features like gesture-based input and ingredient-based recipe suggestions. The limitations found were detection errors (avg precision = 0.807) and dependence on consistent user logging. 
 
 ## Prototype Design and Features
 
@@ -47,9 +46,18 @@ Due to lack of financing, I haven't been able to get WasteWise hosted on a publi
 
 ### Quantitative Analysis 
 
+#### Model Performance 
+
+![](materials/yolo11n/train/BoxPR_curve.png)
+
+This Precision-Recall curve shows the detection performance for multiple object classes. Most classes achieve high precision and recall, while a few classes such as thyme (0.337)perform poorly. The overall mean Average Precision (mAP@0.5) of 0.807 suggests strong model performance but with variability depending on the object type. 
+
+![](materials/yolo11n/train/confusion_matrix_normalized.png)
+The confusion matrix supports these results by showing most classes have strong diagonal values indicating correct classifications, but visually similar or small objects like rosemary, eggs and thyme are once again often miscategorized.
+
 #### SUS Score
 
-In benchmarking the SUS, we compare the  mean to the “golden standard” benchmark of 68:
+In benchmarking the SUS, we compare the  mean to the score 68 (α = 0.05):
 
 Null hypothesis (H₀): The system usability is less than or equal to the benchmark.
 
@@ -59,20 +67,15 @@ Alternative hypothesis (H₁): The system usability is better than the benchmark
 
 * H1:μ > 68
 
-Significance level: α = 0.05
+Mean SUS: 85.50 (std: 11.91, t: 3.29, one-sided p: 0.0152)
 
-We obtain the following: 
-Mean SUS: 85.50
-Std SUS: 11.91
-T-statistic: 3.29
-One-sided p-value: 0.0152
-
-Since p=0.0152 < α=0.05, we reject the null hypothesis. 
+Since p = 0.0152 < α = 0.05, we reject the null hypothesis. 
 We also obtain the Cohen's d value vs benchmark as 1.47, indicating the usability improvement is substantial, not just statistically significant.
-
+![](materials/images/sus_nasa.png)
 
 #### NASA-TLX index
 The mean RAW NASA-TLX index approximates to 2 (out of 7), which indicates a low workload in using the task. Dimensions which scored the highest workloads were Mental Demand (2.6), Temporal Demand and Effort (2.4). Implications further discussed in 'Practical Usefulness in Everyday Life'.
+![](materials/images/nasa_tlx.png)
 
 #### Pre/Post-Task Comparisons
 The Pre-Task survey comprised of questions Q1-Q7 while the Post-Task survey had all the questions from Q1-Q10 along with SUS and NASA-TLX.
@@ -81,18 +84,18 @@ The Pre-Task survey comprised of questions Q1-Q7 while the Post-Task survey had 
 
 After reverse scaling and taking the mean of each subheading, the pre- vs post-task results suggest that the prototype had a strong impact on inventory awareness while changes in broader food management behaviors were positive but less conclusive. 
 
-| Subgroup            | Pre-task Mean | Post-task Mean | Paired t-test (t) | Paired t-test (p) | Wilcoxon W | Wilcoxon p |
-| ------------------- | ------------- | -------------- | ----------------- | ----------------- | ---------- | ---------- |
-| Inventory Awareness | 1.90          | 4.20           | 7.667             | 0.002             | 0.000      | 0.062      |
-| Food Management     | 3.65          | 4.00           | 2.746             | 0.052             | 0.000      | 0.125      |
+![](materials/images/table2.png)
 
 For Inventory Awareness, the mean score increased from 1.90 to 4.2, and the paired t-test shows t = 7.667, p = 0.002, indicating a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test, a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean rose from 3.65 to 4.0, with the t-test yielding t = 2.746, p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
 
-The post-task Impact questions shows a high mean score of 4.5 out of 5, indicating that participants perceived the AI-assisted food management prototype as highly effective in raising their awareness and guiding their behavior regarding food waste.
+![](materials/images/pre_post_likert.png)
+
+The post-task Impact questions shows a high mean score of 4.53 out of 5, indicating that participants perceived the AI-assisted food management prototype as highly effective in raising their awareness and guiding their behavior regarding food waste.
 
 ### Qualitative Analysis 
 Thematic analysis was conducted following the methodology outlined in Naeem et al. (2023) , the full process visible on the Miro link in materials/README.md. All interviews were first recorded then transcribed. Themes discussed below.
-
+![](materials/images/qual1.jpg)
+![](materials/images/qual2.jpg)
 #### Impact on Users' Behaviours and Mental Model
 The prototype fostered meaningful cognitive shifts in participants’ attitudes toward food management and waste. 3 out of 5 users reported a newfound understanding of expiry dates, realizing that “some foods are still safe to eat after their expiry date” and that “best before” labels might sometimes relate to quality rather than safety. In P4's words: “It's an eye-opener—it helps me think more about managing food before it expires.” The app also raises awareness towards lesser known methods of dealing with surplus, as P5 says, "I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate."  
 
@@ -100,20 +103,20 @@ On a behavioral level, participants said the app would increase confidence and i
 
 #### Usability and Interface Experience
 
-Participants said that the interface was easy to use and pick up, and had engaging methods of input. According to P5, the way the application picks up on human gestures (thumbs-up) during the scanning process makes input a lot funner. Participants also noted that the inventory page had descriptive labels that helped them notice which foods to prioritize in one look (P1).
+Participants said that the interface was easy to use and pick up, and had engaging methods of input. According to P5, the way the application picks up on human gestures (thumbs-up) during the scanning process makes input a lot funner. Participants also noted that the inventory page had descriptive labels that helped them notice which foods to prioritize in one look (P1). This is in line with the good SUS score (mean = 0.85, p = 0.0152).
 
 #### Practical Usefulness in Everyday Life
 
-Users noted the prototype offered tangible benefits beyond food organization. A participant highlighted sustainable behaviours would help them save more money (P1). Users also described a psychological or emotional satisfaction associated with using the system, with one remarking that it “felt generally good for (my) conscience (P4).” Despite these advantages, some barriers to adoption were identified: consistent use requires temporal investment and motivation, meaning that the app’s full potential hinges on routine use. These are consistent with the results of the NASA-TLX, which showed that the app required higher mental and temporal demand and efforts.
+Users noted the prototype offered tangible benefits beyond food organization. A participant highlighted sustainable behaviours would help them save more money (P1). Users also described a psychological or emotional satisfaction associated with using the system, with one remarking that it “felt generally good for (my) conscience (P4).” Some barriers to adoption were also identified: consistent use requires temporal investment and motivation, meaning that the app’s full potential hinges on routine use. These are consistent with the results of the NASA-TLX, which showed that the app required higher mental and temporal demand and efforts.
 
 #### AI Limitations and Suggested Improvements
 
-In terms of computer vision, issues such as inaccurate object detection and misidentification were noted, prompting suggestions for better model training, improved datasets, and automatic scanning of expiry dates. Users also requested additional features to enhance practical utility, including displaying nutritional information, offering a more diverse range of recipe suggestions, enabling offline use, and providing notifications or reminders.
+In terms of computer vision, issues such as inaccurate object detection and misidentification were noted (which ties in with our model training results), prompting suggestions for better model training, improved datasets, and automatic scanning of expiry dates. Users also requested additional features to enhance practical utility, including displaying nutritional information, offering a more diverse range of recipe suggestions, enabling offline use, and providing notifications or reminders.
 
 ## Acknowledgements
 
-* ChatGPT - Writing skeletons, cleaning transcripts, Junior Software Engineer
-* Claude - Lead Software Engineer
+* ChatGPT - Writing skeletons, cleaning transcripts, Junior SWE
+* Claude - Lead SWE
 * Otter AI - Voice to Text transcription
 * Me - SCRUM Master
 
