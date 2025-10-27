@@ -75,29 +75,18 @@ We also obtain the Cohen's d value vs benchmark as 1.47, indicating the usabilit
 The mean RAW NASA-TLX index approximates to 2 (out of 7), which indicates a low workload in using the task. Dimensions which scored the highest workloads were Mental Demand (2.6), Temporal Demand and Effort (2.4). Implications further discussed in 'Practical Usefulness in Everyday Life'.
 
 #### Pre/Post-Task Comparisons
-#### Inventory Awareness
-| Short Label | Original Question |
-|------------|-----------------|
-| Q1 | I am aware of the expiry dates of the food I have in my kitchen. |
-| Q3 | I know where I can donate leftover food in my local area. |
-| Q6 | I can distinguish which foods are still safe to eat after the printed expiry date, and which are not. |
+The Pre-Task survey comprised of questions Q1-Q7 while the Post-Task survey had all the questions from Q1-Q10 along with SUS and NASA-TLX.
 
-#### Food Management
-| Short Label | Original Question |
-|------------|-----------------|
-| Q2 | I am likely to throw food away if it has reached the expiry date. |
-| Q4 | I know how to make good use of all the food I have in my kitchen. |
-| Q5 | I feel confident in planning meals to minimize food waste. |
-| Q7 | I often forget about items in my kitchen until they go bad. |
+![](materials/images/table.png)
 
-#### Impact
-| Short Label | Original Question |
-|------------|-----------------|
-| Q8 | The app helps me become more aware of how much food I have and what might go to waste. |
-| Q9 | The app makes food management feel more complicated than it should be. |
-| Q10 | Using the app would help me reduce my overall food waste in the long term. |
+After reverse scaling and taking the mean of each subheading, the pre- vs post-task results suggest that the prototype had a strong impact on inventory awareness while changes in broader food management behaviors were positive but less conclusive. 
 
-After reverse scaling and taking the mean of each subheading, the pre- vs post-task results suggest that the prototype had a strong impact on inventory awareness while changes in broader food management behaviors were positive but less conclusive. For Inventory Awareness, the mean score increased from 1.90 to 4.2, and the paired t-test shows t = 7.667, p = 0.002, indicating a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test, a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean rose from 3.65 to 4.0, with the t-test yielding t = 2.746, p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
+| Subgroup            | Pre-task Mean | Post-task Mean | Paired t-test (t) | Paired t-test (p) | Wilcoxon W | Wilcoxon p |
+| ------------------- | ------------- | -------------- | ----------------- | ----------------- | ---------- | ---------- |
+| Inventory Awareness | 1.90          | 4.20           | 7.667             | 0.002             | 0.000      | 0.062      |
+| Food Management     | 3.65          | 4.00           | 2.746             | 0.052             | 0.000      | 0.125      |
+
+For Inventory Awareness, the mean score increased from 1.90 to 4.2, and the paired t-test shows t = 7.667, p = 0.002, indicating a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test, a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean rose from 3.65 to 4.0, with the t-test yielding t = 2.746, p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
 
 The post-task Impact questions shows a high mean score of 4.5 out of 5, indicating that participants perceived the AI-assisted food management prototype as highly effective in raising their awareness and guiding their behavior regarding food waste.
 
