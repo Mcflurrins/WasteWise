@@ -5,10 +5,7 @@ author: u8260921
 ---
 
 <!-- 
-Write your final project documentation here under the provided subheadings, it should be no more than 1980 words. 
-Please delete commented text in this document before the submission deadline. 
-
-to include an image, use this syntax:
+it should be no more than 1980 words. 
 
 ![Caption for your image](materials/your-image.jpg)
 
@@ -100,6 +97,9 @@ The mean RAW NASA-TLX index approximates to 2 (out of 7), which indicates a low 
 | Q9 | The app makes food management feel more complicated than it should be. |
 | Q10 | Using the app would help me reduce my overall food waste in the long term. |
 
+After reverse scaling and taking the mean of each subheading, the pre- vs post-task results suggest that the prototype had a strong impact on inventory awareness while changes in broader food management behaviors were positive but less conclusive. For Inventory Awareness, the mean score increased from 1.90 to 4.2, and the paired t-test shows t = 7.667, p = 0.002, indicating a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test, a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean rose from 3.65 to 4.0, with the t-test yielding t = 2.746, p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
+
+The post-task Impact questions shows a high mean score of 4.5 out of 5, indicating that participants perceived the AI-assisted food management prototype as highly effective in raising their awareness and guiding their behavior regarding food waste.
 
 ### Qualitative Analysis 
 Thematic analysis was conducted following the methodology outlined in Naeem et al. (2023) , the full process visible on the Miro link in materials/README.md. All interviews were first recorded then transcribed. Themes discussed below.
@@ -107,7 +107,7 @@ Thematic analysis was conducted following the methodology outlined in Naeem et a
 #### Impact on Users' Behaviours and Mental Model
 The prototype fostered meaningful cognitive shifts in participants’ attitudes toward food management and waste. 3 out of 5 users reported a newfound understanding of expiry dates, realizing that “some foods are still safe to eat after their expiry date” and that “best before” labels might sometimes relate to quality rather than safety. In P4's words: “It's an eye-opener—it helps me think more about managing food before it expires.” The app also raises awareness towards lesser known methods of dealing with surplus, as P5 says, "I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate."  
 
-On a behavioral level, participants said the app would increase confidence and intentionality in managing food. The recipe generation feature empowered less experienced cooks to creatively utilize ingredients they already had. According to P5: “I’m not a good cook. This helps a lot for making meals with what I already have.” The inventory and prioritization tools prompted proactive planning, with users noting how the app “helped them keep track of what to use first (P3)” and “think twice before throwing out expired food. (P1)”  These indicate the prototype did translate awareness into practical action.
+On a behavioral level, participants said the app would increase confidence and intentionality in managing food. The recipe generation feature empowered less experienced cooks to creatively utilize ingredients they already had. According to P5: “I’m not a good cook. This helps a lot for making meals with what I already have.” The inventory and prioritization tools prompted proactive planning, with users noting how the app “helped them keep track of what to use first (P3)” and “think twice before throwing out expired food. (P1)”  It should be of note that the quantitative analysis showed non-significant (but positive) differences for changes in Food Management Behaviour. The observed behavioral shifts are promising but require further study with a larger sample to confirm their statistical robustness.
 
 #### Usability and Interface Experience
 
