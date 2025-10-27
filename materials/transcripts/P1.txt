@@ -1,0 +1,89 @@
+﻿Researcher: Okay, hi, so thank you for being part of the study that they were looking at the food inventory up. That helps you track what you have in your kitchen, generate recipe suggestions, find food donation options for surplus items and look after the expiry of your inventory. This APP is supposed to be a mobile APP actually, but deployment was crashing out on me. So all we have today is my laptops front camera, so heads up. It's going to be a bit harder to get the proper scan on the food. I would like you to answer the questions as if this was a mobile product. 
+
+
+Sure.
+
+
+ Before we begin, I want to confirm your consent to take part. Participation is voluntary, and you can stop at any time or skip. Any question. Your responses will be anonymous and no identifying Information will be used and reports our publications. Do you consent to participate in this study? I do consent. For your first task. I'd like you to input these items that you have into the inventory. I'll tell you three ways to do it. First, you can go onto the camera scanner, scan your stuff and press the snapshot button. Second, you can put the thumbs up to basically do the same thing. And there you can just access the inventory. There's going to be an AD item button in there, okay? You can input these groceries into the inventory in any way you like this experiment and play around with it and have fun. 
+So I have black pepper, you have black pepper. 
+you might want to. All right, cool. 
+And then let me add some more items, and that's eggs, all right. 
+manually. 
+And then also black pepper. 
+you can set the expiry date or whatever you like, by the way, just to simulate the. 
+ok fast. I'd say I store my bread in the fridge.
+What are you thinking as you enter? This item? 
+Turns out that my eggs were plastics, pirate day. And then my bread is so fresh as well as my black peppers since it expires on 2026. 
+And up displays that. 
+right? This states it correctly. 
+I'd like you to just explore more about the speech. In general. We have the expiry Info button, and you can add that stuff, do it stuff, you can add stuff as well. 
+I can check the inspire Info on each item and the storage and safety notes of the corresponding item. And then I could also see the youth date and intended storage of each item. For example, you can cook chicken breast to 160 5 hundred temperature in order for it to be safe to eat. And I could also delete my items. In case, I ran out of that specific item, but also added the item. Maybe let's say I forgot to mention that the breadth was vegan or gluten Free, and I can update the bread into a gluten Free bread. 
+I would also generate recipes. But let's wait since I would like to delete, for example, fresh tomatoes. It leads items all. 
+So that's good so far. What's your thoughts on the expiry Info that you see? Is it different per item? And what does it actually say to you? 
+Each item has a different expiry Info, for example, when we check spices like the time and that pepper, it has have it has an expiry status, which would explain that the time is still good after expiry. So it should be fine if you use the time if it were to be inspired and for the black pepper, since it's a spy. So it's also good at expiry. So you don't have to worry about that. Let's see. Bread. Bread is typically so good, 3 to 5 days of expiry just look for signs of mode like you would imagine it to be said if there's no more attached to the bread, then it's still okay to use. 
+And after that, if you see the items in here, do you have any idea of how you would use up all of these items in your kitchen? And what you would do if there was any surplus? 
+I think I would just meal prep. My all of my items that's on the fresh list. For example, I have chicken, breast, bread and black pepper. I could make like black peppered chicken with bread as the sides or if I have more spices and I could make like more items, more foods, right? 
+Then maybe to help you with the meal planning process, you could try using the generate recipes tool over there. And it's going to basically match ingredients to what you have in your pantry. 
+How are you finding this so far? Is this helpful? Or do you have any other thoughts on the feature? 
+This really help me on figuring out what to eat? For example, it recommends me that I could make shark sugar, which is a dish from Russia, I believe. It's a mixed up tomato goodness in a plant Top with its and other toppings. And it matched my previous ingredients that I input it to the website. And it'll tell me exactly what ingredients that I would use. And for example, if I click on the dish, it also shows the steps on how to make the dish. There's also debt read tags. For example, if you're a vegetarian, then this meal suits you and it also recommended me chicken fried rice. All right. 
+So apart from that, you can look at the third feature of our APP down there, which shows you what to do with the surplus. 
+How are you finding this feature, in particular, which shows about the food donation locations? You can go to in case you have a surplus. Do you have any idea of like what occasion this might be suited for? 
+Maybe if you would host an event and there's a lot of foods left over from that event, you could basically use this Info to donate to certain types of charity spots. I believe there's also community fridges like in a new in club line, especially in Cambridge. And there's also charity drop offs, like in the center of hundreds participate 100 years later. Yes, I guess that's all. How did you use it? All right. 
+And that's all for the task part of this evaluation mouse. I would like you to fill out the survey, the postal survey that I sent. Okay, so thank you for filling out the survey. Now just a few closing questions. How did using the APP influence the way you think about food waste? 
+They help me on more details that certain type of foods can actually be safe to eat even after its expiry date and also how to cook on some sort of food that would make it safe to eat. 
+So would you say it increase their awareness on how you keep track of inventory in the kitchen? Or did you learn anything else besides that from using this APP? 
+Yeah, it would definitely it helped me on figuring out what types of food that I have and expiry date that it has. And it also keep track of each items that I bought from the store. And also that I could donate the foods that I have left like for a while, and I don't know what to do. Right? So I think so. 
+Thanks for your valuable input. Did you find any aspects of the APP easy to use or difficult to use? 
+Every aspect of the APP was easy to use. I didn't find any troubles on any part of the APP. I guess most of the camera system that the APP has may or may not still needed some improvements, I guess. That's all that I can say. 
+All right, what challenges are obstacles will prevent you from using this APP regularly in your daily life? 
+Maybe if I don't have any data since the APP is currently still web based. So maybe if it is actually a mobile APP that you can use offline, even without data. And I guess that would be beneficial to use. 
+any suggestions and feedback for the APP. 
+maybe make the computer vision, object detection better and also have more data sets for the food and also more donation locations that I could donate my food and maybe also the recipes and the macros of each food. Maybe like how many cups or calories or protein that the dish has. I guess that would be all the feedback. 
+Thank you for attending the study. Any final thoughts, perhaps. Yet. 
+no. I don't have any final thoughts. All right. 
+go. Thanks. 
+
+
+________________
+
+
+Researcher: Hi, thank you for being part of this study. We're looking at a food inventory app that helps you track what you have in your kitchen, generate recipe suggestions, find food donation options for surplus items, and monitor expiry dates.
+This app is supposed to be a mobile app, but deployment kept crashing on me—so today we’ll just use my laptop’s front camera. Heads up, it might be a bit harder to get a proper scan of the food. I’d like you to answer the questions as if this was a mobile product.
+P1: Sure.
+Researcher: Before we begin, I just want to confirm your consent to take part. Participation is voluntary, and you can stop at any time or skip any question. Your responses will be anonymous, and no identifying information will be used in reports or publications. Do you consent to participate in this study?
+P1: I do consent.
+Researcher: Okay, cool. So for your first task, I would like you to input these items into the inventory, and I’ll tell you three ways to do it. First, you can go to the camera scanner, scan your stuff, and press the Snapshot button. Second, you can use a thumbs-up gesture to do the exact same thing. Third, you can just access the inventory, and there’s an Add Item button in it. You can put these in any way you like — just experiment and play around with it. Tell me how it goes and think aloud while you’re doing it.
+P1: Okay. So I have black pepper.
+Researcher: Great, you have black pepper.
+P1: All right, cool. Let me add some more items—eggs, and then also black pepper manually. I can set the expiry date too, right?
+Researcher: Yes, you can set the expiry date however you like, just to simulate.
+P1: Okay, first one. I’d say I store my bread in the fridge.
+Researcher: What are you thinking as you enter these items?
+P1: Turns out my eggs were past their expiry date, but my bread is still fresh. My black pepper is also fine since it expires in 2026. The app displays all that correctly.
+Researcher: Good. I’d like you to explore more of the features. For example, check the expiry info button, add or edit items, etc.
+P1: Okay. I can check expiry info for each item and see the storage and safety notes. I can also view the “use by” date and storage recommendations. For example, the app says chicken breast should be cooked to 165°F to be safe. I can also delete items if I run out, or update them—for example, if I forgot to note that the bread is gluten-free, I can change it.
+Researcher: Great. It can also generate recipes—but let’s hold off for a second. Try deleting something, like fresh tomatoes.
+P1: Done—it deleted fine.
+Researcher: Perfect. What do you think of the expiry info you see? Is it different for each item, and what does it tell you?
+P1: Each item has different expiry info. For example, spices like thyme and black pepper both show expiry statuses saying they’re usually still good after expiry, so it’s fine to use them. Bread, though, says it’s typically good for 3–5 days after expiry if there’s no mold. So yeah, app’s listing out items by priority of whether they’re expiring soon, already expired or still fresh. It also lets you know if the already expired items could possibly be salvaged, like, kind of prompts you to think for yourself and look for signs of expiry before just throwing it out.
+Researcher: After seeing your items here, how would you use up what’s in your kitchen, and what would you do with any surplus?
+P1: I’d probably meal prep with my fresh ingredients. For example, I could make black pepper chicken with bread on the side, or add more spices for variety.
+Researcher: Nice. To help with meal planning, you can try the “Generate Recipes” tool—it matches recipes to your pantry ingredients. How are you finding that feature?
+P1: It really helps me figure out what to eat without having to spend a lot of time googling and searching on youtube. For example, it recommended I make shakshuka—it’s that tomato-based dish topped with eggs. It matched my ingredients and showed the exact steps to cook it. It also has dietary tags—like if a dish is vegetarian. That helps if I’m serving other people. It even suggested chicken fried rice too.
+Researcher: Great. Now, look at the third feature—the one showing food donation locations for surplus food. What do you think of this feature, and when do you think it might be useful?
+P1: Maybe if I host an event and have leftovers, I could use this info to find donation spots—like charity centers or community fridges. 
+Researcher: That makes sense. All right, that’s all for the task portion. I’d like you to fill out the post-use survey I sent.
+P1: Okay.
+Researcher: Thank you. Now just a few closing questions. How did using the app influence how you think about food waste?
+P1: It helped me realize that some foods are still safe to eat after their expiry date and taught me how to look for signs of expiry with my own five senses, like looking out for mold or weird smells.
+Researcher: Would you say it increased your awareness of tracking inventory in your kitchen? Did you learn anything else?
+P1: Yes, definitely. It helped me see what foods I have, their expiry dates, and keep track of what I’ve bought. It also reminded me that I could donate surplus food instead of letting it go to waste.
+Researcher: Thanks for your valuable input. Did you find any parts of the app easy or difficult to use?
+P1: Everything was easy to use. I didn’t have any trouble. Maybe the camera system still needs a bit of improvement, but that’s all.
+Researcher: What challenges or obstacles might prevent you from using the app regularly?
+P1: Maybe if I don’t have mobile data, since it’s web-based right now. If it were an offline mobile app, that’d be much better.
+Researcher: Any suggestions or feedback for improving the app?
+P1: Maybe improve the computer vision detection and expand the food dataset. Also, add more donation locations and show nutritional info like calories or protein for each recipe.
+Researcher: Excellent feedback. Thank you for participating in the study. Any final thoughts?
+P1: This would really help me save my money because the app reminds me to think twice before I throw out expired food. It'd be great if it could scan the macros of the food and display them on the matched recipes too. 
+Researcher: All right, thank you!

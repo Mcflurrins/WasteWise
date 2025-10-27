@@ -1,0 +1,126 @@
+﻿Researcher: Okay, hi, so thanks for being part of the study. Today we're looking at the food inventory up. That helps you track what you have in your kitchen. Your expiry dates generate recipe suggestions and find food donation options for surplus items, and this APP is actually supposed to be a mobile APP, but deployment was crashing out on me. So all we have to do is my laptops front camera. So goody, it's going to be a bit harder to get a proper scan on the food, but it's okay. Before we begin, I want to confirm your consent to take part. Participation is voluntary. You can stop at any time, skip any question responses, anonymous, and now identifying Information will be used in reports or publications. Do you consent to participate in the study? So for your first task, I like you doing, but these items into the inventory. And although you three ways to do it, first you can go to the camera scanner, scan your stuff and press the snapshot button. 
+And then second, you can put the thumbs up instead of pressing the snapshot button. And then third, you can just access the inventory. And there's gonna be an AD item, but an American man with, yeah, go experiment and play around with it and have fun. Tell me what you're thinking as you do it. 
+Do the camera detector for us. 
+My talk about doesn't work, by the way you have to use a mouse. No, I'm gonna ask for not to be like maybe for everyone goes out, take one. 
+What do I do? Just? 
+Okay, so you can put the thumbs up, hold on, maybe like there you go. 
+Now put in the details. Yeah. 
+he directing. Cool. 
+Do you see your stuff here? Why don't you? Yeah, there it is. Wait. I don't think that's your stuff that was added previously. I forgot to delete it. I think if you scroll down, you'll see her. 
+insertion. 
+Here it is. Yeah. Okay. Now you can try and putting the other two things, the bread and the eggs. You can do it. Any method you want put Florida. 
+eggs are flowing in it. 
+I'm red eggs. 
+How did it get eggs from that? 
+So the magic of computer vision, I guess you'll see your eggs. Do you see your eggs? 
+What do you think so far? Good. 
+It's good. Pretty it's pretty responsive. 
+Surprisingly, Brad, how do you think of the accuracy of the model so far? 
+I guess it's good. 
+I I I as you say, that immediately at the miss registers. like it got the bed, but it got the chicken vest from somewhere like that. 
+Where are you going? I'm going. Bye bye, bye, bye bye, bye bye bye, safe trip. You can delete it, by the way. Thank you. 
+The grade is at as well. 
+Now I want you to explore this your kitchen page. There's some expiry Info. There are sections here. How do you think that might be helpful or redundant? 
+This item should be consumed by its expiry date for safety, so it tells you which items should be consumed by the expiry. And you can't overused like use them after the expiry. 
+but check something that would like. That is something like that's not refresh product. 
+Like what is it still good after exercise? 
+What is the difference here? Exactly. 
+This is past expiry, but it's still good. Okay. Like it tells me, if like, even after the expiry has passed, if it's Free to consume that food or not, MHM. Instead of just throwing it away. Yeah, that is good. 
+All right. There are some added and delayed actions as well. When do you think that might go into play? I did. 
+When I view, when i've used some of it. 
+for mushrooms, when i've used like one or two mushrooms, I could decrease the quantity of it. 
+Yeah, what do you think you would do with all of this food in your pantry? Like, how would you plan out how to use all of this? 
+There's generate recipes. 
+without that. Would you have like any idea? 
+I don't have any idea. I'm not a good girl. I see. 
+What would you do if there was like a surplus of the items? 
+There was a surplus of the items. 
+There's like so much food, and you don't really know what to do with it. 
+I would invite people. 
+Okay, so the idea is to share with other people perhaps of all of it. Yeah, there's actually something our offers in relation to that go back to generate recipes, right? You can scroll to the bottom. 
+Donate your food, yeah. 
+nice. So what do you think so far? 
+It's pretty good like all the features are pretty well implemented apart from just that chicken. Breast. 
+That is all. So just some final closing questions. Let's see, how did using the APP influence the way you think about food waste? 
+It helps me like find out whether our food is good even after its expiry date. So I don't have to throw it away. 
+Yeah, so it just gives you a more consideration before you throw out your food. 
+and also what to do with, although some of the food that I have. 
+anything new you learned from the APP, anything new. 
+as a time would be like I would have to throw it away after expiry, but I guess it's not the case. 
+Mhm. 
+Yeah, all right. The aspects of the APP were easy to use are difficult to use. 
+I think most like all of the aspects were pretty easy to use. 
+any challenges that you were facing when you were. 
+By that, while detecting using the detector, it would falsely identified human faces as separate categories as well. 
+I see, so like some inaccuracies and model detection, any obstacles that would prevent you from like adopting this APP in your daily life, like. 
+just the model accuracy. If the model accuracy isn't high enough, I don't think I would be able to adapt it, but the model accuracy is good enough. Then I don't see any other issues I see. 
+And if you confident that the features of this APP would work for you in real life, especially in regards to like generating recipes and donations. 
+What is that the question? 
+I do you think the donations and the recipe generation would actually work for you in real life? Yeah. 
+MHM. 
+Last question, any suggestions and feedback for the APP? No. 
+I don't think so, I enjoyed that. 
+All right, good. And that's all you can just fill out the four star survey. 
+________________
+
+
+Researcher: Okay, hi, thanks for being part of the study. Today we’re looking at a food inventory app that helps you track what you have in your kitchen, check expiry dates, generate recipe suggestions, and find food donation options for surplus items.
+The app is actually supposed to be a mobile app, but deployment was crashing—so all we have today is my laptop’s front camera. It might be a bit harder to get a proper scan on the food, but that’s okay.
+Before we begin, I want to confirm your consent to take part. Participation is voluntary—you can stop at any time or skip any question. Your responses will be anonymous, and no identifying information will be used in reports or publications. Do you consent to participate in this study?
+P5: Yeah.
+Researcher: Okay, cool. So for your first task, I would like you to input these items into the inventory, and I’ll tell you three ways to do it. First, you can go to the camera scanner, scan your stuff, and press the Snapshot button. Second, you can use a thumbs-up gesture to do the exact same thing. Third, you can just access the inventory, and there’s an Add Item button in it. You can put these in any way you like — just experiment and play around with it. Tell me how it goes and think aloud while you’re doing it.
+P5: Okay.
+Researcher: You could try the camera detector first if you’re unsure. By the way, my trackpad doesn’t work, so you’ll need to use the mouse.
+P5: Okay, what do I do?
+Researcher: You can put the thumbs up—hold on, there you go. Now enter the item details.
+P5: Cool. The thumbs up thing is a nice touch, it makes the experience quite fun. 
+Researcher: Do you see your stuff here? Wait—that might be items added from before, I forgot to delete them. If you scroll down, you should see yours.
+P5: Yeah, here it is. I found mine.
+Researcher: Great. Now try adding the other two items—the bread and the eggs. You can use any method you want.
+P5: Okay. Eggs are getting detected.. and bread, eggs… wow. How did it get eggs from that? The scanning aspect makes this a lot easier, especially after a grocery run, I could just scan the items from the camera instead of manual input.
+Researcher: Do you see your eggs in the inventory?
+P5: Yeah.
+Researcher: What do you think so far?
+P5: It’s good—pretty responsive.
+Researcher: Nice. How do you feel about the model’s accuracy so far?
+P5: I guess it’s good. Let’s try scanning the bread.
+Researcher: (laughs) As you say that, it immediately misregisters—looks like it detected chicken breast from somewhere.
+P5: (laughs) Yeah.
+Researcher: You can delete it if you want in the post-scanning customizable form.
+P5: Okay, deleted. I like how customizable my food database is.
+Researcher: Now, I’d like you to explore the “Your Kitchen” page. You’ll see some expiry info and different sections. How do you think that might be helpful—or redundant?
+P5: It’s helpful. It tells you which items should be consumed by their expiry date, and that you shouldn’t use them after.
+Researcher: What about the “Check Before Use” category?
+P5: That’s for items that might still be okay even after expiry, right?
+Researcher: Exactly.
+P5: Yeah, that’s good—it tells you when food might still be safe to eat even after expiry, so you don’t have to throw it away immediately.
+Researcher: Great. There are also some edit and delete actions. When do you think those might come into play?
+P5: Yeah, I like how customizable my food database is. Maybe when I’ve used some of an item—like if I’ve used one or two mushrooms, I could use the edit feature to decrease the quantity.
+Researcher: Makes sense. So, looking at all this food in your pantry, how would you plan to use it all?
+P5: I’d probably go to “Generate Recipes.”
+Researcher: Without that feature, would you have any ideas on what to make?
+P5: Not really, I’m not a good cook. This helps a lot for making meals with what I already have.
+Researcher: (laughs) Fair enough. What would you do if you had a surplus of items?
+P5: If I had too much food, I’d invite people over.
+Researcher: So, share it. That’s actually something the app tries to encourage. Scroll to the bottom of “Generate Recipes.”
+P5: “Donate Your Food.” Nice. I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate.
+Researcher: What do you think so far?
+P5: It’s pretty good—all the features are well implemented, apart from that chicken breast misdetection.
+Researcher: (laughs) Fair. Okay, just a few closing questions. How did using the app influence the way you think about food waste?
+P5: It helps me figure out whether food is still good even after the expiry date, so I don’t have to throw it away immediately.
+Researcher: So it makes you think more before discarding food.
+P5: Yeah, and it helps me know what to do with some of the stuff I already have.
+Researcher: Did you learn anything new from using the app?
+P5: I always thought you had to throw food away after expiry, but I guess that’s not always the case.
+Researcher: Were there any aspects that were easy or difficult to use?
+P5: Most of it was easy to use.
+Researcher: Any challenges while testing it?
+P5: The detector sometimes misidentified human faces as food items.
+Researcher: Got it—some inaccuracies in detection. Any obstacles that might stop you from using the app regularly?
+P5: Just the model accuracy. If it’s not accurate enough, I wouldn’t use it. But if it’s good, I don’t see any other issue.
+Researcher: Do you think the recipe generation and donation features would work for you in real life?
+P5: Yeah, I think so. 
+Researcher: Any suggestions or feedback?
+P5: Not really. I enjoyed it.
+Researcher: That’s great. Thanks—you can just fill out the post-task survey now.
+P5: Okay.

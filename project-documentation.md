@@ -61,11 +61,7 @@ The confusion matrix supports these results by showing most classes have strong 
 
 In benchmarking the SUS, we compare the mean to the score 68 (α = 0.05) [5]:
 
-| Hypothesis          | Statement                                | Notation  |
-|----------------------------|-------------------------------------------|-----------------|
-| **Null (H₀)**   | System usability ≤ the benchmark   | H₀: μ ≤ 68      |
-| **Alternative (H₁)** | System usability > the benchmark | H₁: μ > 68      |
-| 
+![](materials/images/hypothesis.png)
 
 Mean SUS: 85.50 (std: 11.91, t: 3.29, one-sided p: 0.0152)
 
@@ -80,13 +76,14 @@ The mean RAW NASA-TLX index approximates to 2 (out of 7), which indicates a low 
 #### Pre/Post-Task Comparisons
 The Pre-Task survey comprised of questions Q1-Q7 while the Post-Task survey had all the questions from Q1-Q10 along with SUS and NASA-TLX.
 
+#### Inventory Awareness
 ![](materials/images/table.png)
 
 After reverse scaling and taking the mean of each subheading, the pre- vs post-task results suggest that the prototype had a strong impact on inventory awareness while changes in broader food management behaviors were positive but less conclusive. 
 
 ![](materials/images/table2.png)
 
-For Inventory Awareness, the mean score increased, and the paired t-test shows p = 0.002: a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test [7], a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean also increased, with the t-test yielding p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
+For Inventory Awareness, the mean score increased, and the paired t-test shows p = 0.002: a statistically significant improvement in awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test [7], a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean also increased, with the t-test yielding p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
 
 ![](materials/images/pre_post_likert.png)
 
@@ -97,7 +94,7 @@ Thematic analysis was conducted following the methodology outlined in Naeem et a
 ![](materials/images/qual1.jpg)
 ![](materials/images/qual2.jpg)
 
-#### Impact on Users' Behaviours and Mental Model
+#### Sustainability Impact on Users' Behaviours and Mental Model
 The prototype fostered meaningful cognitive shifts in participants’ attitudes toward food management and waste. Participants reported a newfound understanding of expiry dates, realizing “some foods are still safe to eat after their expiry date” and that “best before” labels could relate to quality rather than safety. In P4's words: “It's an eye-opener — it helps me think more about managing food before it expires.” The app also raises awareness towards lesser known methods of dealing with surplus, as P5 says, "I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate."  
 
 On a behavioral level, participants said the app would increase confidence and intentionality in managing food. The recipe generation feature empowered less experienced cooks to creatively utilize ingredients they already had. According to P5: “I’m not a good cook. This helps a lot for making meals with what I already have.” The inventory and prioritization tools prompted proactive planning, with users noting how the app “helped them keep track of what to use first (P3)” and “think twice before throwing out expired food. (P1)”  It should be of note that the quantitative analysis showed non-significant (but positive) differences for changes in Food Management Behaviour. The observed behavioral shifts are promising but require further study with a larger sample to confirm their statistical robustness.

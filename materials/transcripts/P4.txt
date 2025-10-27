@@ -1,0 +1,44 @@
+﻿Researcher (R): Okay, hi. So thanks for being part of the study. Today, we're looking at a food inventory app that helps you track what you have in your kitchen, generate recipe suggestions, and find food donation options for surplus items. The app is actually supposed to be a mobile app, but deployment was crashing out on me, so all we have today is my laptop’s front camera. So heads up, it’s going to be a bit harder to get a proper scan on the food — but it’s all right.
+And before we begin, I want to confirm your consent to take part. Participation is voluntary, and you can stop at any time or skip any question. Your responses will be anonymized — no identifying information will be used in reports or publications. Do you consent to participate in the study?
+P4: Yes.
+R: Okay, cool. So for your first task, I would like you to input these items into the inventory, and I’ll tell you three ways to do it. First, you can go to the camera scanner, scan your stuff, and press the Snapshot button. Second, you can use a thumbs-up gesture to do the exact same thing. Third, you can just access the inventory, and there’s an Add Item button in it. You can put these in any way you like — just experiment and play around with it. Tell me how it goes and think aloud while you’re doing it.
+P4: Nice. So I’m opening the food detector, yeah, and I’m showing it the eggs. It detected the items. I can see that size X and quantity 1. I need to input the dates now.
+R: Yeah, you can just input any dates you want — it’s just a simulation, okay?
+R: And so this gets imported to your list, and you can do the same with the other two items, or just do anything you like with it. Just experiment around.
+P4: Okay, I’m looking through the list of items. It tells me when an item’s about to expire, which ones are fresh. I’m gonna add a new item manually — I’ll add bread.
+P4: Putting fridge as the storage. I’m gonna give it an expiration date… what? Gluten-free bread, all right? It tells me that it’s expiring soon — expiry. So it correctly told me, since I purposely put a date that’s already passed, that it’s expired.
+R: All right, cool. And it also tells you to check before use. The expiry info button is actually clickable if you’d like to try it — it gives you more insight into whether something can be used beyond its expiry or if you should really just use it by the expiry date. What do you think of that so far?
+P4: I think it’s quite useful, since a lot of people think that if it’s past expiry, they should toss it out immediately. But usually that’s not the case — it’s just “best before” dates that indicate quality, not safety. But here it tells me that it’s typically good after three or five days, so if there’s no sign of mold, I can still eat it. That’s quite useful.
+R: All right, cool. I guess you just have to add in the last item now — and you can do that any way you want, honestly.
+P4: You might want to go a bit back… yeah, black pepper, yeah. Oh, thumbs up — black pepper as I wanted.
+R: All right, cool. Now that you’ve already used all of the features in this section of the app, how do you think you would use all of these items that you have in your pantry right now?
+P4: I’d probably make some sort of chicken dish with them. Maybe a curry.
+R: All right. And do you think the planning process for generating or coming up with recipes could be automated or helped by digital means?
+P4: Yeah, definitely. I think some people have difficulty cooking, so that would be helpful — to know what they can make instead of just tossing things out.
+R: Yeah, okay. So continuing off that point, there’s actually a Generate Recipes button here that could help you with that. What do you think of it so far?
+P4: I think it’s pretty good. It listed out all the ingredients I have and the recipe.
+R: Click it too as well — sorry, the trackpad’s not working.
+P4: So yeah, it tells me what ingredients I have and what I need, and it shows me the steps and the final product as an image.
+R: All right. What do you think you would do if there was a surplus of food in your pantry?
+P4: Probably do some meal prepping.
+R: Yeah, that makes sense. Apart from that, there’s actually another feature of the app that helps with managing surplus. If you scroll to the bottom of this page…
+P4: I see Donate Your Food, and when I click it, it shows me places where I can donate my food. There are three options — the food bank, which tells me the address, phone number, what they accept, and their hours. Also charities and community fridges. Wow, I didn't know about these until today.
+R: All right, cool. Now for some closing questions — how did using the app influence the way you think about food waste?
+P4: I think it helps me have a more “one-place” solution to see everything and helps me manage my food waste.
+R: All right. Anything new that you learned from this app?
+P4: How to make Shakshuka?
+R: Yeah, of course! So maybe the recipes were helpful for coming up with plans to manage your food?
+P4: Yeah, the recipes and the location of food banks were quite helpful.
+R: Cool. Any aspects of the app that were easy or difficult to use?
+P4: No, everything was pretty intuitive. I think the manual input part — you had to read it a bit, but once you know how, it’s quite easy. Nothing really challenging.
+R: All right, cool. And maybe in regards to the accuracy of the model itself — do you have anything to say about that? I mean the scanning section.
+P4: Yeah, it was pretty accurate — surprisingly.
+R: It was trained on a custom dataset. It’s actually a bit wonky — sometimes it works, sometimes it doesn’t.
+P4: Interesting. Everything I told it to do did pretty well, though.
+R: Thanks. And just two more questions — what challenges or obstacles would prevent you from using this app regularly in your daily life?
+P4: Hmm, not really any obstacles. Maybe if I’m busy I might forget to use it, but it’s pretty easy to use.
+R: All right. Any suggestions or feedback?
+P4: I think if you can scan barcodes of food items and have it automatically list nutrition facts and expiry dates, that would be quite helpful.
+R: All right, and that’s all for the study. Is there anything else you’d like to add?
+P4: No.
+R: Cool, thank you!

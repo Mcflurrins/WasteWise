@@ -1,0 +1,57 @@
+﻿Researcher: Hi, so thanks for being part of the study. Today we're going to look at the food inventory app that helps you track what you have in your kitchen, generate recipe suggestions, and find food donation options for surplus items. This app is actually supposed to be a mobile app, but deployment was crashing out. So today we're using my laptop’s front camera. Heads up—scanning is going to be a bit harder.
+Before we begin, I just want to confirm your consent to take part. Participation is voluntary—you can stop at any time or skip any question. Your responses will be anonymized, and no identifying information will be used in reports or publications.
+Researcher: Do you consent to participate in the study?
+P2: Yes.
+R: Okay, cool. So for your first task, I would like you to input these items into the inventory, and I’ll tell you three ways to do it. First, you can go to the camera scanner, scan your stuff, and press the Snapshot button. Second, you can use a thumbs-up gesture to do the exact same thing. Third, you can just access the inventory, and there’s an Add Item button in it. You can put these in any way you like — just experiment and play around with it. Tell me how it goes and think aloud while you’re doing it. Oh, and use the mouse, my trackpad’s broken.
+P2: (laughs) Why?
+Researcher: It just breaks sometimes.
+P2: Okay, so I scan the bread.
+Researcher: You can use a thumbs-up now—there you go. Whoa, three breads. Sometimes it’s a bit wonky, but you can just re-customize it in the form.
+P2: Okay, one bread—imported to kitchen. 
+Researcher: Great. What else would you like to add?
+P2: Okay, black pepper.
+Researcher: Yeah, and you can set the expiry date and the storage location too. What are you thinking about it so far?
+P2: Seems fine.
+Researcher: You can try scanning eggs next. You might want to lower it a bit—yeah, there you go.
+P2: Okay, fill out the form... expiry in a week maybe? Sure.
+Researcher: All right, good. Now just take a look at this page. You’ll see headers like Expiring Soon and Past Expiry. These are clickable—you can edit or delete items too. Tell me what you think about these sections.
+P2: I think this is a very useful section, because I can prioritize using these items first. Like, I’d know what to use for breakfast, for example. And sometimes I’m not sure if something like garlic powder is safe after expiry—but this tells me it probably is.
+Researcher: The app expands on that in this page. What do you think about that?
+P2: It’s good. I like it.
+Researcher: Do you think this might be helpful overall, or misleading?
+P2: Yeah, definitely helpful. I usually throw stuff out on the expiry date, but I guess now I know it differs case by case.
+Researcher: Yeah, it indicates which items are still safe after expiry and which are not.
+P2: Hey, who stores mushrooms in the freezer?
+Researcher: That’s a pre-filled entry, you can edit that—you can change the storage to “fridge.”
+P2: All right, sure.
+Researcher: Looking at this list, do you have any idea how you’d use all of these food items—or what you’d do if there was a surplus?
+P2: Some of them, maybe. But not all. I’d need some direction on what to do.
+Researcher: That’s fair. Try exploring the page more.
+P2: Oh, there’s a generate recipes feature. Ah, it, like, generates recipes based on what I have in the kitchen, so that’s helpful, since I’m not great at meal planning.
+Researcher: What’s your take on the functionality of the app so far?
+P2: It’s really useful. Could it also suggest what to buy? Like, if I only have eggs and tomatoes, maybe recommend garlic or pepper to complete a recipe?
+Researcher: Yeah, you can see full ingredients on the recipe page, so you’d know what you’re missing. And as you can see here, there’s another solution to food surplus at the bottom—why don’t you explore this feature?
+P2: “Donate your food.” I don’t know if I’d normally donate food, but now I know that I can, and that there are easy ways to do it near me.
+Researcher: So would you say you’re now more aware of donation options in your area?
+P2: Yeah. Or even that I could donate in the first place.
+Researcher: In what situations do you think you’d use this feature?
+P2: If I had an untouched carton of eggs or something. I’d feel bad donating half-eaten stuff, but unopened food, yeah.
+Researcher: That’s true. All right, that’s it for the demo. Just a few closing questions. How did using the app influence the way you think about food waste?
+P2: It helped me keep track of what I need to use first. Like, I should prioritize certain items before using everything else in the fridge or pantry.
+Researcher: Anything new you learned from this app?
+P2: I learned how to make shakshuka.
+Researcher: (laughs) That’s great. Were there any aspects that were easy or difficult to use?
+P2: The scanning—like, I’d rather use it on my phone. I’d hold the phone in one hand and the item in the other, but where’s my third hand to do the thumbs up?
+Researcher: (laughs) Yeah, that’s fair. The thumbs-up was meant for the mobile version—there’d be a button for it there.
+P2: Exactly.
+Researcher: So what do you think of the thumbs-up gesture? Engaging or just making things harder?
+P2: Yeah, the thumbs-up thing is a fun addition, I reckon just using a normal snapshot and manual input gets boring.
+Researcher: (laughs) All right. What challenges or obstacles might prevent you from using the app daily?
+P2: If I had to manually put in the expiry date every single time.
+Researcher: True. Any suggestions or feedback for the app?
+P2: Maybe find a way to scan the expiry date automatically—like through the barcode.
+Researcher: That’s a good idea. Anything else?
+P2: Maybe notifications—like if something’s close to expiring, remind me to use it soon.
+Researcher: That’s a great suggestion. All right, that’s pretty much it.
+P2: Cool.
+Researcher: Thank you for participating in the study!

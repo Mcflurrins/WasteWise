@@ -1,0 +1,72 @@
+﻿Researcher: Hi, thanks for being part of the study. Today we’re looking at a food inventory app that helps you track what you have in your kitchen, generate recipe suggestions, and find food donation options for surplus items.
+The app is actually supposed to be a mobile app, but deployment didn’t work out—so all we have today is my laptop’s front camera. Heads up, it might be a bit harder to get a proper scan on the food because of that.
+Before we begin, I want to confirm your consent to take part. Participation is voluntary—you can stop at any time or skip any question. Your responses will be anonymous, and no identifying information will be used in reports or publications. Do you consent to participate in this study?
+P3: Yeah.
+Researcher:  Okay, cool. So for your first task, I would like you to input these items into the inventory, and I’ll tell you three ways to do it. First, you can go to the camera scanner, scan your stuff, and press the Snapshot button. Second, you can use a thumbs-up gesture to do the exact same thing. Third, you can just access the inventory, and there’s an Add Item button in it. You can put these in any way you like — just experiment and play around with it. Tell me how it goes. 
+P3: Okay, so show the eggs?
+Researcher: Yes, sure—there you go. Then you can fill in the form.
+P3: Are you trying to do something like what Coles does?
+Researcher: Coles? I’m not sure—what do they do?
+P3: They have a storage option like fridge, freezer, pantry.
+Researcher: Oh! Yeah, we’ve got that too. You can set where you store the eggs.
+P3: Okay, I’m gonna put the eggs in the freezer.
+Researcher: (laughs) Sure, if that’s what you want—though probably not ideal for eggs.
+P3: That food donation feature is cool.
+Researcher: Thanks! It only works for Canberra locations at the moment, though.
+P3: That’s still good.
+Researcher: You can go to either the scan page or add items manually—whichever you prefer.
+Researcher: You can try again if it misdetects something, or edit or delete an item. What are you thinking so far?
+P3: I’m testing the thumbs-up detection. Garlic—thumbs up. Black pepper—thumbs up.
+Researcher: Nice.
+P3: How long did it take you to get the correct code working?
+Researcher: It took quite a few hours.
+P3: It looks like a lot of work. You’ve got donation places and a full kitchen interface—that’s impressive.
+Researcher: Thank you! What do you think of the app so far—any initial thoughts?
+P3: I like the storage options. Though I couldn’t find black pepper at first. The UI doesn’t show recently-input items, I think if it did, it would be better.
+Researcher: Yeah, you’ll have to scroll a bit. It’s listed below.
+P3: Ah, got it. So that’s under “fresh food.” “Check before use.” Okay, that’s neat.
+Researcher: You can also try adding a new item manually, like bread, or use the scanner again.
+P3: I like the scanner—it gives me Coles vibes. Pantry, okay.
+P3: Do you have a post-study survey?
+Researcher: Yes, you can fill it in your free time.
+P3: (laughs) Okay, so I’ve added chicken breast and thyme.
+Researcher: Nice. Now you can look through the “Your Kitchen” tab. It has expiry info sections like “Use Soon,” “Expiring Soon,” “Past Expiry,” and “Check Before Use.”
+P3: I love the “Generate Recipes” feature. Does it work beyond just Shakshuka?
+Researcher: Well, yes, but there’s only a few placeholder recipes in the database so far.
+P3: You should pull some from a recipe magazine.
+Researcher: I really should. I made this prototype just before coming here.
+P3: That’s still really cool. I like the “Use Soon” and “Fresh” categories.
+Researcher: How do you think this app could help you in day-to-day life?
+P3: It’s kind of an eye-opener—it helps me think more about managing food before it expires.
+Researcher: Great! You can also check expiry info—each item has a use-by date and a short safety note.
+P3: Is the expiry date displayed automatically?
+Researcher: Not yet—you input it yourself. For now, it’s manual.
+P3: Okay, that makes sense. You can also edit and delete items, right?
+Researcher: Yep, it’s all editable.
+P3: That’s really good.
+Researcher: I’d also like you to explore the recipe generation and donation features, and tell me what you think.
+P3: Sure.
+Researcher: What do you find most interesting about the app?
+P3: I like the scan feature and the donation part—especially the list of donation places. How did you find that data?
+Researcher: It’s mapped from food bank locations in Canberra. Do you think this helps raise awareness about where to donate?
+P3: Yeah, it does. So you can donate to food banks, not directly to homeless people?
+Researcher: That’s right—these are registered food banks. You can click them for more details.
+P3: Oh, okay, that’s cool. Yeah, I like that. I didn’t even know there were food banks and food donation places here, so I guess it’s great for raising awareness.
+Researcher: Great. If that’s all, I just have a few closing questions.
+P3: Sure.
+Researcher: How did using the app influence the way you think about food waste?
+P3: I think it could really help me track my grocery usage and maybe optimize it. The recipe tool could be improved, though—maybe add a few more recipes for vegetarians, non-vegetarians, and vegans. Even five options would make a big difference. Also, I usually just throw out my food as soon as it expires, but the app lets me know what foods I can still salvage and what signs to look out for when I’m eating beyond the expiry date. I get to save more food and money this way.
+Researcher: So a slightly larger recipe database, but still simple.
+P3: Yeah, exactly. Just enough to include different diets—that would be great.
+Researcher: Did you learn anything new from using the app?
+P3: It would help me improve how I plan groceries and my regular food intake.
+Researcher: Were there any parts of the app that were easy or difficult to use?
+P3: Not really difficult, but funny thing—it sometimes identifies you as garlic powder or chicken. More training is needed for the model, I think.
+Researcher: (laughs) Yeah, that’s because my face was in the training data.
+P3: Oh, that explains it.
+Researcher: What challenges might prevent you from using this app regularly?
+P3: Honestly, laziness. Even if it’s convenient, people might not use it regularly—kind of like recipe flyers you get from Woolworths that you look at once and forget. But for someone who really wants to improve their food habits, this could be super useful. So, it’s mostly a motivation problem, ‘cause not everyone’s concerned about food waste enough to want to log their inventory.
+Researcher: That’s fair. Any final suggestions or feedback?
+P3: (laughs) Maybe send lazy people to rehab. I guess the app’s just generally good for my conscience, it makes me feel like a better person.
+Researcher: (laughs) Duly noted. That concludes the session—just fill out the post-study survey and you’re good to go.
+P3: Thanks.
