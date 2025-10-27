@@ -5,18 +5,18 @@ author: u8260921
 ---
 
 ## Research Question, Plan, and Conclusions
-Hey Sharks, did you know that households in Australia throw out up to $1500 a year down their bins [1]? That is, in the form of food waste. Households discard enough food daily to provide over a billion meals, even as 1 in 11 people go hungry worldwide [2]. 58% of high-wasting households cited food reaching their expiry date as the most common reason for food disposal, suggesting widespread confusion about food safety versus quality indicators and unnecessary wastage of perfectly edible food [1].
+Hey Sharks, did you know that households in Australia throw out up to $1500 a year down their bins [1]? That is, in the form of food waste. Households discard enough food daily to provide over a billion meals, even as 1 in 11 people go hungry worldwide [2]. 58% of high-wasting households cited food reaching their expiry date as their number one reason for food disposal, suggesting widespread confusion about food safety versus quality indicators and unnecessary wastage of perfectly edible food [1].
 
-These metrics highlight the core of our problem: the need for better awareness on discerning food safety by our own means, understanding the difference between 'use by' and 'best-before', utilizing what we already have in our kitchens smartly, and making better use of the surplus.
+These metrics highlight the core of our problem: the need for better awareness on discerning food safety by our own means, understanding the difference between 'use by' and 'best-before', utilizing what we already have in our kitchens, and making better use of the surplus.
 
-In light of these challenges, this study explores an innovative approach: integrating AI assistance into food management systems to encourage sustainable behaviors related to the 12th SDG [3]. I believe digitalization and use of AI can help make inventory-tracking a more engaging and efficient experience that covers all the bases.
+In light of these challenges, this study explores an innovative approach: integrating AI assistance into food management systems to encourage sustainable behaviors related to the 12th SDG [3]. Use of AI and digitalizaton can help make inventory-tracking a more engaging and efficient experience that covers all the bases.
 
 This leads to my research question: “What are students’ perceptions of usability, usefulness, and sustainability impact in an AI-assisted food management prototype for reducing food waste?”
 
 ### Evaluation Plan
 Consent to be recorded was requested beforehand and identifying information has been anonymized. The study starts with a pre-task survey to probe awareness on food waste and responsible consumption. 
 
-Participants were briefed on the functionality of the website, then asked to input 3 food objects as database entries. The food items provided were bread, a carton of eggs, and a can of black pepper. In order to improve immersion, participants were asked to roleplay [4] as if they had shopped for the groceries themselves. The site also comes pre-filled with other ingredients to simulate a moderately pre-stocked kitchen environment. The means by which participants decided to input the ingredients were left up to individual exploration to encourage independent evaluation of the UI/UX. Participants were then asked what they'd do with the food they now had in their "kitchen" (current database state), and how they'd deal with surplus. Afterwards, a semi-structured interview was conducted to obtain qualitative data. Lastly, participants were to fill a post-task survey comprising the SUS scale, a short NASA-TLX index, and another post-task probe on responsible consumption. 
+Participants were briefed on the functionality of the website, then asked to input 3 food objects as database entries. The food items provided were bread, a carton of eggs, and a can of black pepper. In order to improve immersion, participants were asked to roleplay [4] as if they had shopped for the groceries themselves. The site also comes pre-filled with other ingredients to simulate a pre-stocked kitchen environment. The means by which participants could input the ingredients were left up to individual exploration, to encourage independent evaluation of the UI/UX. Participants were then asked what they'd do with the food they now had in their "kitchen" (current database state), and how they'd deal with surplus. Afterwards, a semi-structured interview was conducted to obtain qualitative data. Lastly, participants were to fill a post-task survey comprising the SUS scale, a short NASA-TLX index, and another post-task probe on responsible consumption. 
 
 ## Conclusions 
 
@@ -30,15 +30,15 @@ You can input a food item into your digital inventory by scanning it with the ca
 
 ![](materials/images/1.jpg)
 
-You can then input the storage, dietary details, and expiry date and this will go into your digital inventory - which you're free to edit and delete as you please. The inventory is sorted by priority on which foods will expire soon, which are already past expiry, and which are still fresh. 
+You can then input the details and this will go into your digital inventory - which is manually editable. The inventory is sorted by priority on which foods will expire soon, which are already past expiry, and which are still fresh. 
 
-Of course, you can look into the expiry info of each food to see whether they could still be salvaged even if they've passed their expiry date. The app shows information about the quality indicators to look out for in each type of food, so you can think twice before throwing it out.
+You can look into the expiry info of each food to see whether they could still be salvaged even if they've passed their expiry date. The app shows quality indicators to look out for in each type of food, so you can think twice before throwing it out.
 
 ![](materials/images/2.jpg)
 
-It doesn't stop here, the app is designed to be your one-stop for tackling the problems of a high-waste household. The 'Generate Recipes' button matches what you have in your digital inventory with a database of recipes to help you prep your meals and really use up what you already have in your kitchen. 
+The 'Generate Recipes' button matches what you have in your digital inventory with a database of recipes to help you prep your meals and really use up what you already have in your kitchen. 
 
-Still have a surplus even after that? Scroll down to 'Donate Your Food', and you'll see where you can go to spread the joy of eating to others in need. :)
+Still have a surplus even after that? Scroll down to 'Donate Your Food', and you'll see where you can go to spread the joy of eating to others in need. 
 
 ![](materials/images/3.jpg)
 
@@ -61,17 +61,15 @@ The confusion matrix supports these results by showing most classes have strong 
 
 In benchmarking the SUS, we compare the mean to the score 68 (α = 0.05) [5]:
 
-Null hypothesis (H₀): The system usability is less than or equal to the benchmark.
-
-* H0:μ ≤ 68
-
-Alternative hypothesis (H₁): The system usability is better than the benchmark.
-
-* H1:μ > 68
+| Hypothesis          | Statement                                | Notation  |
+|----------------------------|-------------------------------------------|-----------------|
+| **Null (H₀)**   | System usability ≤ the benchmark   | H₀: μ ≤ 68      |
+| **Alternative (H₁)** | System usability > the benchmark | H₁: μ > 68      |
+| 
 
 Mean SUS: 85.50 (std: 11.91, t: 3.29, one-sided p: 0.0152)
 
-Since p = 0.0152 < α = 0.05, we reject the null hypothesis. 
+Since p = 0.0152 < α = 0.05, we reject the null hypothesis. The prototype’s usability is better than what is considered average for general systems.
 We also obtain the Cohen's d value [6] vs benchmark as 1.47, indicating the usability improvement is substantial, not just statistically significant.
 ![](materials/images/sus_nasa.png)
 
@@ -88,7 +86,7 @@ After reverse scaling and taking the mean of each subheading, the pre- vs post-t
 
 ![](materials/images/table2.png)
 
-For Inventory Awareness, the mean score increased from 1.90 to 4.2, and the paired t-test shows t = 7.667, p = 0.002, indicating a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test [7], a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean rose from 3.65 to 4.0, with the t-test yielding t = 2.746, p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
+For Inventory Awareness, the mean score increased, and the paired t-test shows p = 0.002: a statistically significant improvement in students’ awareness of expiry dates, donation options, and ability to distinguish safe foods. The Wilcoxon signed-rank test [7], a non-parametric test that does not assume the data follows a normal distribution, gives p = 0.062, suggesting a similar trend but slightly weaker evidence under the non-parametric assumption. For Food Management, the mean also increased, with the t-test yielding p = 0.052, a marginally non-significant result, and the Wilcoxon p = 0.125, confirming no strong evidence of change when relaxing normality assumptions. 
 
 ![](materials/images/pre_post_likert.png)
 
@@ -100,7 +98,7 @@ Thematic analysis was conducted following the methodology outlined in Naeem et a
 ![](materials/images/qual2.jpg)
 
 #### Impact on Users' Behaviours and Mental Model
-The prototype fostered meaningful cognitive shifts in participants’ attitudes toward food management and waste. 3 out of 5 users reported a newfound understanding of expiry dates, realizing that “some foods are still safe to eat after their expiry date” and that “best before” labels might sometimes relate to quality rather than safety. In P4's words: “It's an eye-opener—it helps me think more about managing food before it expires.” The app also raises awareness towards lesser known methods of dealing with surplus, as P5 says, "I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate."  
+The prototype fostered meaningful cognitive shifts in participants’ attitudes toward food management and waste. Participants reported a newfound understanding of expiry dates, realizing “some foods are still safe to eat after their expiry date” and that “best before” labels could relate to quality rather than safety. In P4's words: “It's an eye-opener — it helps me think more about managing food before it expires.” The app also raises awareness towards lesser known methods of dealing with surplus, as P5 says, "I didn’t even know donating was an option, and this app even includes the places I can go to if I ever want to donate."  
 
 On a behavioral level, participants said the app would increase confidence and intentionality in managing food. The recipe generation feature empowered less experienced cooks to creatively utilize ingredients they already had. According to P5: “I’m not a good cook. This helps a lot for making meals with what I already have.” The inventory and prioritization tools prompted proactive planning, with users noting how the app “helped them keep track of what to use first (P3)” and “think twice before throwing out expired food. (P1)”  It should be of note that the quantitative analysis showed non-significant (but positive) differences for changes in Food Management Behaviour. The observed behavioral shifts are promising but require further study with a larger sample to confirm their statistical robustness.
 
@@ -118,10 +116,8 @@ In terms of computer vision, issues such as inaccurate object detection and misi
 
 ## Acknowledgements
 
-* ChatGPT - Writing skeletons, cleaning transcripts, Junior SWE
-* Claude - Lead SWE
-* Otter AI - Voice to Text transcription
-* Me - SCRUM Master
+* ChatGPT - Writing skeletons, Code generation
+* Otter AI - Transcription
 
 ## References
 
