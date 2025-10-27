@@ -24,7 +24,7 @@ Overall, students perceived the prototype as highly usable, useful, and impactfu
 
 ## Prototype Design and Features
 
-WasteWise is a website that utilizes computer vision to easily keep track of inventory and when they will soon expire. It's a generalized tool that covers the problems we unearthed in the beginning of this story.
+WasteWise is a high-fidelity prototype of a website that utilizes computer vision to easily keep track of inventory and when they will soon expire. It's a generalized tool that covers the problems we unearthed in the beginning of this story. In short, it incorporates gesture-based input for user engagement, and matches every type of food in your inventory to a database of expiry information to let you know about its quality indicators and whether it's advisable to consume past expiry. Of course, consumption entails we'd have to make something out of that food, so I also implemented a recipe-generation system. The app also contains details such as location and contact info on where you could donate your food. The expected use case for such an app would be a mobile phone for convenience, but for ease of testing and deployment, the prototype currently lives on my PC's localhost.
 
 You can input a food item into your digital inventory by scanning it with the camera. This app is built on Django and uses YOLO11, a state-of-the-art object detection model trained on a manually-labelled, homemade dataset of 100 pictures of my previous grocery run. You can either take a snapshot of the detected objects via the 'Save Snapshot' button, or do a fun little thumbs-up gesture (non-standard interaction). Look, ma, no hands!
 
