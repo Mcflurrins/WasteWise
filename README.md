@@ -12,10 +12,10 @@ Here's a tease of what it looks like, taken from the project documentation markd
 ![](materials/images/3.jpg)
 
 ### How to Navigate this Repository
-#### 1. PLEASE Skim the Project Documentation
+#### 1. PLEASE Skim the Project Documentation ```project-documentation.md```
 This is the central deliverable of this repository, consisting of quantitative and qualitative analysis of our pilot evaluation regarding WasteWise, its problem introduction, and its features, along with all the resources and citations used in this study. It's really cool I promise and you can probably skim it in under a minute.
 
-#### 2. Watch the Project Presentation
+#### 2. Watch the Project Presentation ```project-presentation.mp4```
 This is a 5-minute TL;DR of the Project Documentation if you're not into reading. 
 
 #### 3. See deliverables in the ```materials``` folder
@@ -27,8 +27,8 @@ Source code is in ```HCI_prototype```.
 
 ### Note on PDF generation
 
-This repository automatically generates PDF files from markdown files to create the a nice version of your assessment documents.
+This repository automatically generates PDF files from markdown files to create a nice version of the ```project-documentation.md``` file. 
 
-Sometimes this process doesn't work the way you might expect.
+Sometimes this process doesn't work as expected.
 
 In particular, due to how the Pandoc tool generates a PDF (using LaTeX), images float to where they fit in the document. If you have a lot of images in one place, they may float to the end of the document. 
