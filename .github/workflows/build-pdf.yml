@@ -1,0 +1,58 @@
+name: Build PDF
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+      - "**/*.png"
+      - "**/*.jpg"
+      - "**/*.jpeg"
+      - "**/*.PNG"
+      - "**/*.JPG"
+      - "**/*.JPEG"
+  workflow_dispatch:
+
+env:
+  ASSIGNMENT_DOCUMENT_NAME: project-documentation
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    container:
+      image: charlepm/pandoc-latex-libertine:0.3.0
+      options: --entrypoint /bin/sh
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Build PDF
+        shell: sh
+        env:
+          INPUT_MARKDOWN: ${{ env.ASSIGNMENT_DOCUMENT_NAME }}.md
+          OUTPUT_PDF: ${{ github.event.repository.name }}-${{ github.repository_owner }}-${{ env.ASSIGNMENT_DOCUMENT_NAME }}.pdf
+        run: |
+          cp */*.png . || true
+          cp */*.PNG . || true
+          cp */*.jpg . || true
+          cp */*.JPG . || true
+          cp */*.jpeg . || true
+          cp */*.JPEG . || true
+          pandoc \
+            --standalone \
+            --embed-resources \
+            --metadata date="$(date '+%Y-%m-%d')" \
+            --output="$OUTPUT_PDF" \
+            -V 'geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm' \
+            -V 'papersize: a4' \
+            -V 'pagestyle:headings' \
+            -V 'fontfamily:libertine,sourcecodepro' \
+            -V 'fontsize:11pt' \
+            "$INPUT_MARKDOWN"
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-pdf
+          path: ${{ github.event.repository.name }}-${{ github.repository_owner }}-${{ env.ASSIGNMENT_DOCUMENT_NAME }}.pdf
