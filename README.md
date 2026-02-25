@@ -24,11 +24,3 @@ My quantitative analysis Jupyter Notebook and its corresponding survey sources a
 Transcripts for qualitative analysis are attached in the ```transcripts``` folder, with the resulting thematic analysis in here: https://miro.com/app/board/uXjVJ0Daq3M=/?share_link_id=762044370534 
 
 Source code is in ```HCI_prototype```.
-
-### Note on PDF generation
-
-This repository automatically generates PDF files from markdown files to create a nice version of the ```project-documentation.md``` file. 
-
-Sometimes this process doesn't work as expected.
-
-In particular, due to how the Pandoc tool generates a PDF (using LaTeX), images float to where they fit in the document. If you have a lot of images in one place, they may float to the end of the document. 
